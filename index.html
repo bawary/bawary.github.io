@@ -295,6 +295,27 @@
             .hero h1 { font-size: 2.1rem; }
             .nav-container { flex-direction: column; gap: 1rem; }
         }
+        .about-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap; /* Zorgt dat het op mobiel onder elkaar klapt */
+}
+
+.about-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
     </style>
 </head>
 <body>
@@ -375,13 +396,15 @@
 
         <!-- About Executive -->
         <div class="about-box">
-            <div class="about-text">
-                <p class="role">SENIOR CONSULTANT & FOUNDER</p>
-                <h3>C. Bawary</h3>
-                <p>Senior Quality Assurance and GMP Specialist with extensive experience in leading cross-functional quality operations and compliance projects across European, US, and Asian pharmaceutical hubs.</p>
-                <p style="margin-top: 0.5rem; color: var(--text-light); font-size: 0.9rem;">Specialized in resolving complex deviations, accelerating product releases, and providing pragmatic executive advice.</p>
-            </div>
-        </div>
+    <img src="atiq.JPG" alt="A. Bawary - Senior Consultant & Founder" class="about-image">
+    
+    <div class="about-text">
+        <p class="role">SENIOR CONSULTANT & FOUNDER</p>
+        <h3>A. Bawary</h3>
+        <p>Senior Quality Assurance and GMP Specialist with extensive experience in leading cross-functional quality operations and compliance projects across European, US, and Asian pharmaceutical hubs.</p>
+        <p style="margin-top: 0.5rem; color: var(--text-light); font-size: 0.9rem;">Specialized in resolving complex deviations, accelerating product releases, and providing pragmatic executive advice.</p>
+    </div>
+</div>
     </main>
 
     <!-- Contact Banner -->
