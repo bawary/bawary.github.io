@@ -1,2 +1,2 @@
 # bawary.github.io
-my blog
+BAWARY. | Pharmaceutical Quality Assurance Services
