@@ -1,0 +1,29 @@
+# BAWARY.
+
+> BAWARY. Pharmaceutical Quality Assurance Services — independent senior GxP QA consultancy
+> for biopharmaceutical, CDMO, and API clients. Founder: Atiq Bawary, senior pharmaceutical
+> QA professional (~15 years), former Senior QA Manager at Ardena (NL) and formally appointed
+> QP Delegate at MSD/Merck (NL, 4 years). Based in Bedburg-Hau/Kleve, Germany (NRW),
+> serving the Netherlands, Germany, Belgium, and remote clients globally.
+
+## Services
+- [Batch release & QP-delegate support](https://bawary.github.io/#services): MBR/BPR review, release file compilation, raw material and intermediate release support
+- [Deviation, OOS & CAPA management](https://bawary.github.io/#services): root-cause investigation leadership, risk-based CAPA, OOS/OOT/OOE laboratory review
+- [EU GMP audit preparation](https://bawary.github.io/#services): gap assessments, mock inspections, Annex 1 / contamination control strategy (CCS) authoring
+- [Vendor & CDMO auditing](https://bawary.github.io/#services): supplier qualification, CDMO/CMO audits, audit follow-up
+- [Training & quality culture](https://bawary.github.io/#services): GxP, GDocP, deviation methodology training; inspection readiness
+
+## Specialization
+- Deviation Investigations and CAPA management 
+- Experienced in the field of Biologics, Nano medicines, ADCs, and APIs in combination with Annex 1. 
+- Bridge support for Asian and US sponsors preparing for EU GMP expectations, EU importers, and QP certification requirements
+- On-site availability in the Netherlands, Germany (NRW), and Belgium within hours
+
+## Contact
+- Email: atiq.bawary@outlook.com
+- Phone: +49 176 70257244
+- Location: Bedburg-Hau/Kleve, Germany (near Dutch border, 20 min from Oss/Nijmegen)
+- LinkedIn: linkedin.com/in/atiqbawary
+
+## Note
+BAWARY. Supports QPs and EU release operations; it does not perform QP certification itself yet. 
