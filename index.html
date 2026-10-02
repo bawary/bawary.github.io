@@ -2,26 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAWARY | Pharmaceutical Quality Assurance Services</title>
-    <meta name="description" content="Senior QA Management, GMP Compliance & Batch Record Review Services for Pharmaceutical and Biotech sectors across EU, US, and APAC.">
-    
-    <!-- Google Fonts & FontAwesome Icons -->
+
+    <title>BAWARY | Senior Pharmaceutical QA Consultant | GMP, Batch Release & CAPA</title>
+
+    <meta name="description"
+          content="BAWARY provides senior pharmaceutical Quality Assurance consulting worldwide. Interim QA support, batch record review, batch release documentation, deviations, RCA, CAPA, GMP audits, inspection readiness, QMS remediation and CDMO oversight. Germany, Netherlands, Belgium and remote global support.">
+
+    <meta name="keywords"
+          content="pharmaceutical QA consultant, GMP consultant, pharmaceutical quality assurance, batch record review, batch release, deviation management, CAPA, root cause analysis, GMP audit, inspection readiness, FDA inspection readiness, EMA GMP, EU GMP, Annex 1, biologics QA, API QA, CDMO audit, QMS consultant, interim QA manager, freelance QA consultant, pharmaceutical consultant Germany, pharmaceutical consultant Netherlands">
+
+    <meta name="author" content="Atiq Bawary | BAWARY. Pharmaceutical Quality Assurance Services">
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <link rel="canonical" href="https://bawary.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BAWARY | Senior Pharmaceutical QA Consultant">
+    <meta property="og:description"
+          content="Senior GMP Quality Assurance support for pharmaceutical and biotech organizations. Batch release, deviations, CAPA, audits, inspection readiness and interim QA support.">
+    <meta property="og:url" content="https://bawary.github.io/">
+    <meta property="og:site_name" content="BAWARY. Pharmaceutical Quality Assurance Services">
+    <meta property="og:image" content="https://bawary.github.io/atiq.JPG">
+    <meta property="og:image:alt" content="Atiq Bawary - Senior Pharmaceutical QA Consultant">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BAWARY | Senior Pharmaceutical QA Consultant">
+    <meta name="twitter:description"
+          content="Senior GMP QA support: batch release, deviations, CAPA, audits, inspection readiness and interim QA.">
+    <meta name="twitter:image" content="https://bawary.github.io/atiq.JPG">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#07182e">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
+
         :root {
-            --primary: #0a192f;
-            --secondary: #0052cc;
-            --accent: #00d2ff;
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-            --bg-light: #f8fafc;
+            --navy: #07182e;
+            --navy-2: #0c2342;
+            --blue: #1769aa;
+            --blue-dark: #0e4f86;
+            --cyan: #16b8d4;
+            --green: #15803d;
+
+            --text: #172033;
+            --muted: #5f6b7a;
+            --light: #f5f8fb;
             --white: #ffffff;
-            --border: #e2e8f0;
+            --border: #dfe6ee;
+
+            --max-width: 1160px;
+            --radius: 10px;
+            --shadow: 0 14px 40px rgba(7, 24, 46, 0.08);
         }
 
         * {
@@ -30,468 +77,1882 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--white);
-            line-height: 1.6;
+            font-family: "Inter", sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.65;
             -webkit-font-smoothing: antialiased;
         }
 
-        h1, h2, h3 {
-            color: var(--primary);
-            font-weight: 700;
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(var(--max-width), calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--navy);
+            line-height: 1.2;
         }
 
         .serif {
-            font-family: 'Playfair Display', serif;
+            font-family: "Playfair Display", serif;
         }
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
-            background-color: var(--white);
-            border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
         }
 
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 1.2rem 2rem;
+        .nav {
+            min-height: 76px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            gap: 30px;
         }
 
         .brand {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--primary);
             text-decoration: none;
+            font-size: 1.55rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: var(--navy);
         }
 
         .brand span {
-            color: var(--secondary);
+            color: var(--blue);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
         }
 
         .btn {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: var(--white);
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 13px 22px;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s ease;
+            font-weight: 700;
+            font-size: 0.92rem;
+            transition: 0.2s ease;
+            border: 1px solid transparent;
         }
 
-        .btn:hover {
-            background-color: #003d99;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+        .btn-primary {
+            background: var(--blue);
             color: var(--white);
-            padding: 5rem 2rem;
-            text-align: center;
         }
 
-        .hero-content {
-            max-width: 850px;
-            margin: 0 auto;
+        .btn-primary:hover {
+            background: var(--blue-dark);
+            transform: translateY(-1px);
         }
 
-        .hero-badge {
-            display: inline-block;
-            background: rgba(0, 210, 255, 0.15);
-            color: var(--accent);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 1px;
+        .btn-light {
+            background: var(--white);
+            color: var(--navy);
+        }
+
+        .btn-light:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            border-color: rgba(255,255,255,0.35);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background:
+                radial-gradient(circle at 85% 20%, rgba(22,184,212,0.13), transparent 30%),
+                linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+            color: var(--white);
+            padding: 92px 0 82px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--cyan);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            margin-bottom: 1.5rem;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
             color: var(--white);
-            font-size: 2.8rem;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
+            font-size: clamp(2.5rem, 5vw, 4.35rem);
+            margin-bottom: 25px;
+            letter-spacing: -1.5px;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            font-weight: 300;
+        .hero h1 span {
+            color: #8de5f0;
         }
 
-        /* Regions bar */
-        .regions {
-            background-color: var(--bg-light);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-light);
-            font-weight: 500;
+        .hero-lead {
+            max-width: 760px;
+            color: #c6d1df;
+            font-size: 1.17rem;
+            margin-bottom: 30px;
         }
 
-        .regions i {
-            color: var(--secondary);
-            margin-right: 0.3rem;
-            margin-left: 1rem;
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
         }
 
-        /* Content Container */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
+        .availability {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            color: #b9c6d6;
+            font-size: 0.88rem;
         }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-title p {
-            color: var(--text-light);
-        }
-
-        /* Services Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 2rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-        }
-
-        .card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        .card ul {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .card ul li {
-            font-size: 0.9rem;
-            color: var(--text-dark);
-            margin-bottom: 0.4rem;
+        .availability span {
             display: flex;
             align-items: center;
+            gap: 7px;
         }
 
-        .card ul li i {
-            color: #10b981;
-            margin-right: 0.5rem;
-            font-size: 0.8rem;
+        .availability i {
+            color: #65d391;
         }
 
-        /* Profile Banner */
-        .about-box {
-            background-color: var(--bg-light);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 3rem 2rem;
-            margin-top: 3rem;
+        .hero-card {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+        }
+
+        .hero-card h2 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-card ul {
+            list-style: none;
+        }
+
+        .hero-card li {
+            color: #d1dbe7;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.09);
+            font-size: 0.93rem;
+        }
+
+        .hero-card li:last-child {
+            border-bottom: none;
+        }
+
+        .hero-card i {
+            color: var(--cyan);
+            width: 22px;
+        }
+
+        /* =========================
+           TRUST BAR
+        ========================= */
+
+        .trust-bar {
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-inner {
+            min-height: 72px;
             display: flex;
-            gap: 2rem;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-        }
-
-        .about-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .about-text h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .about-text .role {
-            color: var(--secondary);
+            gap: 30px;
+            color: var(--muted);
+            font-size: 0.9rem;
             font-weight: 600;
-            margin-bottom: 1rem;
         }
 
-        /* Contact Section */
-        .contact {
-            background-color: var(--primary);
-            color: var(--white);
+        .trust-inner span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trust-inner i {
+            color: var(--blue);
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section.content-section {
+            padding: 88px 0;
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin-bottom: 45px;
+        }
+
+        .section-heading.center {
             text-align: center;
-            padding: 4rem 2rem;
-        }
-
-        .contact h2 {
-            color: var(--white);
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact p {
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .contact-email {
+        .section-label {
+            color: var(--blue);
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 4vw, 2.7rem);
+            margin-bottom: 14px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 1.02rem;
+        }
+
+        /* =========================
+           PROBLEM / SOLUTION
+        ========================= */
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .problem {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 25px;
+            background: var(--white);
+        }
+
+        .problem i {
+            color: var(--blue);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .problem h3 {
+            font-size: 1.08rem;
+            margin-bottom: 9px;
+        }
+
+        .problem p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: var(--light);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: 0 6px 20px rgba(7,24,46,0.03);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9px;
+            background: #eaf4fb;
+            color: var(--blue);
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
             font-size: 1.3rem;
-            color: var(--accent);
-            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .service-card > p {
+            color: var(--muted);
+            margin-bottom: 18px;
+            font-size: 0.94rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            position: relative;
+            padding-left: 22px;
+            margin: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: 800;
+        }
+
+        /* =========================
+           ENGAGEMENTS
+        ========================= */
+
+        .engagement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .engagement {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px;
+        }
+
+        .engagement .number {
+            color: var(--blue);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .engagement h3 {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .engagement p {
+            color: var(--muted);
+            font-size: 0.91rem;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        .about-content .role {
+            color: var(--blue);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            margin-bottom: 8px;
+        }
+
+        .about-content h2 {
+            font-size: 2.25rem;
+            margin-bottom: 16px;
+        }
+
+        .about-content p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 22px;
+        }
+
+        .credential {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 7px 11px;
+            font-size: 0.78rem;
+            color: var(--text);
             font-weight: 600;
         }
 
-        footer {
-            background-color: #050c1a;
-            color: #64748b;
+        /* =========================
+           AI / SEARCH SECTION
+        ========================= */
+
+        .ai-section {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .ai-section h2 {
+            color: var(--white);
+        }
+
+        .ai-section p {
+            color: #bdcad9;
+        }
+
+        .ai-box {
+            max-width: 900px;
+            margin: 0 auto;
             text-align: center;
-            padding: 1.5rem;
-            font-size: 0.85rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.1rem; }
-            .nav-container { flex-direction: column; gap: 1rem; }
+        .ai-box strong {
+            color: var(--white);
         }
-        .about-box {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: var(--bg-light);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 3rem 2rem;
-    margin-top: 3rem;
-    flex-wrap: wrap; /* Zorgt dat het op mobiel onder elkaar klapt */
-}
 
-.about-image {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--secondary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-}
+        .ai-use-cases {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .ai-use-case {
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 8px;
+            padding: 20px;
+            background: rgba(255,255,255,0.045);
+        }
+
+        .ai-use-case strong {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 0.93rem;
+        }
+
+        .ai-use-case span {
+            color: #afbdcd;
+            font-size: 0.84rem;
+        }
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        details {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            list-style: none;
+            font-weight: 700;
+            color: var(--navy);
+            padding-right: 30px;
+            position: relative;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            font-size: 1.2rem;
+            color: var(--blue);
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        details p {
+            margin-top: 12px;
+            color: var(--muted);
+            max-width: 800px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background:
+                radial-gradient(circle at 20% 50%, rgba(22,184,212,0.12), transparent 30%),
+                var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .contact h2 {
+            color: var(--white);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 14px;
+        }
+
+        .contact p {
+            color: #c0ccda;
+            max-width: 680px;
+            margin: 0 auto 28px;
+        }
+
+        .contact-email {
+            color: #8de5f0;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #040d1b;
+            color: #8190a3;
+            padding: 30px 0;
+            font-size: 0.8rem;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        .footer-links a {
+            color: #9ba8b8;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                max-width: 650px;
+            }
+
+            .problem-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .engagement-grid,
+            .ai-use-cases {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto;
+            }
+
+            .credentials {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .nav {
+                min-height: 68px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .service-grid,
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section.content-section {
+                padding: 65px 0;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+            }
+
+            .availability {
+                flex-direction: column;
+                gap: 9px;
+            }
+
+            .container {
+                width: min(var(--max-width), calc(100% - 28px));
+            }
+        }
+
     </style>
-    <!-- BAWARY. structured data for search & AI engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+
+    <!--
+        ============================================================
+        BAWARY STRUCTURED DATA
+        Designed for search engines and machine-readable discovery.
+        ============================================================
+    -->
+
+    <script type="application/ld+json">
     {
-      "@type": ["ProfessionalService", "Organization"],
-      "@id": "https://bawary.github.io/#business",
-      "name": "BAWARY. Pharmaceutical Quality Assurance Services",
-      "alternateName": "BAWARY.",
-      "url": "https://bawary.github.io",
-      "description": "Independent senior GxP QA consultancy: batch release and QP-delegate support, deviation/OOS root-cause investigation, CAPA management, EU GMP audit preparation, Annex 1 sterile manufacturing compliance, vendor and CDMO auditing. Bridge support for Asian and US biotech sponsors entering the EU market.",
-      "founder": { "@id": "https://bawary.github.io/#atiq" },
-      "email": "atiq.bawary@outlook.com",
-      "telephone": "+49 176 70257244",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Saalstrasse 6a",
-        "addressLocality": "Bedburg-Hau",
-        "postalCode": "47551",
-        "addressCountry": "DE"
-      },
-      "areaServed": [
-        { "@type": "Country", "name": "Germany" },
-        { "@type": "Country", "name": "Netherlands" },
-        { "@type": "Country", "name": "Belgium" },
-        { "@type": "AdministrativeArea", "name": "European Union" },
-        { "@type": "AdministrativeArea", "name": "Global (remote)" }
-      ],
-      "knowsAbout": [
-        "GMP",
-        "EU GMP Annex 1",
-        "batch record review",
-        "QP delegate support",
-        "deviation investigation",
-        "root cause analysis",
-        "CAPA",
-        "OOS investigation",
-        "sterile manufacturing",
-        "biologics",
-        "ADC",
-        "API manufacturing",
-        "quality management system",
-        "contamination control strategy",
-        "vendor auditing",
-        "CDMO oversight",
-        "ICH Q7",
-        "21 CFR 210/211",
-        "data integrity"
-      ],
-      "slogan": "Senior GxP QA firepower, on demand — Europe-based, globally available."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://bawary.github.io/#atiq",
-      "name": "Atiq Bawary",
-      "jobTitle": "Founder & Senior GxP QA Consultant",
-      "url": "https://bawary.github.io",
-      "sameAs": ["https://linkedin.com/in/atiqbawary"],
-      "worksFor": { "@id": "https://bawary.github.io/#business" },
-      "knowsAbout": [
-        "GMP",
-        "pharmaceutical quality assurance",
-        "Annex 1",
-        "QP delegation",
-        "deviation management",
-        "CAPA",
-        "biologics",
-        "sterile manufacturing"
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://bawary.github.io/#business",
+          "name": "BAWARY. Pharmaceutical Quality Assurance Services",
+          "alternateName": "BAWARY.",
+          "url": "https://bawary.github.io/",
+          "logo": "https://bawary.github.io/atiq.JPG",
+          "image": "https://bawary.github.io/atiq.JPG",
+
+          "description": "Independent senior pharmaceutical Quality Assurance consultancy providing interim QA support, batch record review, batch release documentation support, deviation investigations, root cause analysis, CAPA management, GMP audits, inspection readiness, QMS remediation, supplier and CDMO auditing, validation oversight and quality risk management.",
+
+          "founder": {
+            "@id": "https://bawary.github.io/#atiq"
+          },
+
+          "email": "mailto:atiqbawary@gmail.com",
+
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "Germany"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            },
+            {
+              "@type": "Country",
+              "name": "Belgium"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "European Union"
+            },
+            {
+              "@type": "Place",
+              "name": "Worldwide - Remote"
+            }
+          ],
+
+          "serviceType": [
+            "Pharmaceutical Quality Assurance Consulting",
+            "GMP Consulting",
+            "Interim QA Support",
+            "Batch Record Review",
+            "Batch Release Support",
+            "Deviation Investigation",
+            "Root Cause Analysis",
+            "CAPA Management",
+            "GMP Audit Support",
+            "Inspection Readiness",
+            "QMS Remediation",
+            "Supplier Auditing",
+            "CDMO Auditing",
+            "Quality Risk Management",
+            "Pharmaceutical QA Training"
+          ],
+
+          "knowsAbout": [
+            "Good Manufacturing Practice",
+            "EU GMP",
+            "EU GMP Annex 1",
+            "Pharmaceutical Quality Assurance",
+            "Batch Record Review",
+            "Batch Release",
+            "Biologics",
+            "API Manufacturing",
+            "Sterile Manufacturing",
+            "ADCs",
+            "Deviation Management",
+            "Root Cause Analysis",
+            "CAPA",
+            "OOS",
+            "OOT",
+            "Quality Management Systems",
+            "GMP Auditing",
+            "Inspection Readiness",
+            "Supplier Qualification",
+            "CDMO Oversight",
+            "Contamination Control Strategy",
+            "ICH Q7",
+            "ICH Q9",
+            "Data Integrity",
+            "Validation",
+            "Pharmaceutical Quality Risk Management"
+          ],
+
+          "sameAs": [
+            "https://linkedin.com/in/atiqbawary"
+          ]
+        },
+
+        {
+          "@type": "Person",
+          "@id": "https://bawary.github.io/#atiq",
+          "name": "Atiq Bawary",
+          "givenName": "Atiq",
+          "familyName": "Bawary",
+          "jobTitle": "Founder & Senior Pharmaceutical QA Consultant",
+          "url": "https://bawary.github.io/",
+          "image": "https://bawary.github.io/atiq.JPG",
+          "worksFor": {
+            "@id": "https://bawary.github.io/#business"
+          },
+          "sameAs": [
+            "https://linkedin.com/in/atiqbawary"
+          ],
+          "knowsAbout": [
+            "Pharmaceutical Quality Assurance",
+            "GMP",
+            "Batch Record Review",
+            "Batch Release",
+            "Deviation Investigations",
+            "CAPA",
+            "Root Cause Analysis",
+            "GMP Auditing",
+            "Inspection Readiness",
+            "Biologics",
+            "Sterile Manufacturing",
+            "API Manufacturing",
+            "Quality Management Systems"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://bawary.github.io/#website",
+          "url": "https://bawary.github.io/",
+          "name": "BAWARY. Pharmaceutical Quality Assurance Services",
+          "publisher": {
+            "@id": "https://bawary.github.io/#business"
+          },
+          "inLanguage": "en"
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://bawary.github.io/#webpage",
+          "url": "https://bawary.github.io/",
+          "name": "Senior Pharmaceutical QA Consultant | BAWARY.",
+          "isPartOf": {
+            "@id": "https://bawary.github.io/#website"
+          },
+          "about": {
+            "@id": "https://bawary.github.io/#business"
+          },
+          "inLanguage": "en"
+        },
+
+        {
+          "@type": "ItemList",
+          "@id": "https://bawary.github.io/#services",
+          "name": "BAWARY Pharmaceutical QA Services",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Interim QA Support"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Batch Record Review and Batch Release Support"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Deviation Investigation, RCA and CAPA"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "GMP Audits and Inspection Readiness"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "QMS Remediation and Quality Risk Management"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Supplier and CDMO Quality Oversight"
+            }
+          ]
+        },
+
+        {
+          "@type": "FAQPage",
+          "@id": "https://bawary.github.io/#faq",
+          "mainEntity": [
+
+            {
+              "@type": "Question",
+              "name": "What pharmaceutical QA services does BAWARY provide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BAWARY provides senior pharmaceutical Quality Assurance support including batch record review, batch release documentation support, deviation investigations, root cause analysis, CAPA management, GMP audit support, inspection readiness, QMS remediation, supplier and CDMO auditing, quality risk management and interim QA support."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Can BAWARY provide short-term interim QA support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. BAWARY is available for short-term project assignments, temporary QA capacity, manufacturing or documentation backlogs, inspection preparation, remediation projects and longer interim QA engagements."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Does BAWARY work internationally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. BAWARY is based in Germany and provides services in Germany, the Netherlands and Belgium, with remote consulting support available internationally where the assignment can be performed remotely."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Can BAWARY support pharmaceutical companies with deviations and CAPA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. BAWARY provides support for complex deviation investigations, root cause analysis, risk-based CAPA management and related GMP quality-system activities."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Can BAWARY support GMP audits and inspection readiness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Services include inspection-readiness preparation, mock inspections, self-inspections, supplier and CDMO audits, audit preparation and quality-system remediation."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Who should contact BAWARY?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pharmaceutical and biotechnology companies, CDMOs, CMOs, QA organizations, quality leaders, QPs, manufacturing organizations and consulting or recruitment firms seeking experienced pharmaceutical QA support can contact BAWARY."
+              }
+            }
+          ]
+        }
+
       ]
     }
-  ]
-}
-</script>
+    </script>
+
 </head>
+
 <body>
 
-    <!-- Header Navigation -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="brand">BAWARY<span>.</span></a>
-            <a href="mailto:atiqbawary@gmail.com" class="btn">Get in Touch</a>
-        </div>
-    </header>
+<header>
+    <div class="container nav">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="hero-badge">Global QA & Compliance Advisory</span>
-            <h1 class="serif">Pharmaceutical Quality Assurance Services</h1>
-            <p>Bridging executive quality leadership with hands-on operational excellence. Specialist support in Batch Record Reviews, CAPA, and EMA/FDA Inspection Readiness.</p>
-            <a href="mailto:atiqbawary@gmail.com" class="btn" style="background-color: var(--accent); color: var(--primary); font-weight: 600;">Request Interim Support</a>
-        </div>
-    </section>
+        <a href="/" class="brand">
+            BAWARY<span>.</span>
+        </a>
 
-    <!-- Regional Coverage Bar -->
-    <div class="regions">
-        <strong>Global Experience:</strong> 
-        <i class="fa-solid fa-location-dot"></i> Netherlands 
-        <i class="fa-solid fa-location-dot"></i> Germany 
-        <i class="fa-solid fa-location-dot"></i> Remote (Global)
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#services">Services</a>
+            <a href="#engagements">Engagements</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <a href="mailto:atiqbawary@gmail.com?subject=Pharmaceutical%20QA%20Support%20Request"
+           class="btn btn-primary">
+            <i class="fa-regular fa-envelope"></i>
+            Discuss a QA Need
+        </a>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                <i class="fa-solid fa-circle-check"></i>
+                Senior Pharmaceutical QA Consultancy
+            </div>
+
+            <h1>
+                Experienced QA support
+                <span>when your team needs it.</span>
+            </h1>
+
+            <p class="hero-lead">
+                BAWARY provides senior pharmaceutical Quality Assurance support
+                for batch documentation, batch release activities, deviations,
+                CAPA, GMP compliance, audits, inspection readiness and QMS
+                remediation.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="mailto:atiqbawary@gmail.com?subject=QA%20Support%20Request"
+                   class="btn btn-light">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Discuss Your Requirement
+                </a>
+
+                <a href="#services" class="btn btn-outline">
+                    View QA Services
+                </a>
+
+            </div>
+
+            <div class="availability">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                    Interim assignments
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                    Project support
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                    Remote global support
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <h2>
+                Typical problems BAWARY can help solve
+            </h2>
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Batch documentation or review backlog
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Complex deviations or overdue CAPAs
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    GMP audit or inspection preparation
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    Supplier / CDMO quality oversight
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-people-arrows"></i>
+                    Temporary shortage of experienced QA capacity
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-line"></i>
+                    QMS remediation or improvement projects
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
 
-    <!-- Core Services -->
-    <main class="container">
-        <div class="section-title">
-            <h2>Core Expertise & Services</h2>
-            <p>Comprehensive Quality & Compliance solutions tailored for pharmaceutical and bio/nanotech environments.</p>
-        </div>
+</section>
 
-        <div class="grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <i class="fa-solid fa-clipboard-check card-icon"></i>
-                <h3>Operational QA & Batch Release</h3>
-                <p>Hands-on execution on the shop floor to eliminate backlogs and maintain uninterrupted supply chain flow.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Batch Record Review (Biologics / API / Annex 1)</li>
-                    <li><i class="fa-solid fa-check"></i> Deviation Management & CAPA</li>
-                    <li><i class="fa-solid fa-check"></i> Root Cause Analysis (RCA)</li>
-                    <li><i class="fa-solid fa-check"></i> QP Support & Documentation</li>
-                </ul>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <i class="fa-solid fa-shield-halved card-icon"></i>
-                <h3>GMP Compliance & Audit Management</h3>
-                <p>Ensuring full regulatory readiness for EU (EMA) and US (FDA) compliance frameworks.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Inspection Readiness Programs</li>
-                    <li><i class="fa-solid fa-check"></i> Self-Inspections & Supplier Audits</li>
-                    <li><i class="fa-solid fa-check"></i> Mock FDA/EMA Audits</li>
-                    <li><i class="fa-solid fa-check"></i> Remediation Strategies</li>
-                </ul>
-            </div>
+<!-- =========================
+     TRUST / COVERAGE
+========================= -->
 
-            <!-- Card 3 -->
-            <div class="card">
-                <i class="fa-solid fa-chart-line card-icon"></i>
-                <h3>Executive QA Advisory & Leadership</h3>
-                <p>High-level strategic oversight and QMS optimization for growing biotech and established pharma entities.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> QA Interim Management & Oversight</li>
-                    <li><i class="fa-solid fa-check"></i> QMS Setup & Implementation</li>
-                    <li><i class="fa-solid fa-check"></i> Executive Level Compliance Reporting</li>
-                    <li><i class="fa-solid fa-check"></i> Risk Management (ICH Q9)</li>
-                </ul>
-            </div>
-        </div>
+<div class="trust-bar">
 
-        <!-- About Executive -->
-        <div class="about-box">
-    <img src="atiq.JPG" alt="A. Bawary - Senior Consultant & Founder" class="about-image">
-    
-    <div class="about-text">
-        <p class="role">SENIOR CONSULTANT & FOUNDER</p>
-        <h3>A. Bawary</h3>
-        <p>Senior Quality Assurance Specialist with extensive experience in leading cross-functional quality operations and compliance projects across European, US, and Asian pharmaceutical hubs.Instructor at the European Compliance Academy (ECA) specializing in Root Cause Investigations. Enrolled in Harvard Executive Education.</p>
-        <p style="margin-top: 0.5rem; color: var(--text-light); font-size: 0.9rem;">Specialized in resolving complex deviations, accelerating product releases, and providing pragmatic executive advice.</p>
+    <div class="container trust-inner">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Germany
+        </span>
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Netherlands
+        </span>
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Belgium
+        </span>
+
+        <span>
+            <i class="fa-solid fa-globe"></i>
+            Remote worldwide
+        </span>
+
+        <span>
+            <i class="fa-solid fa-flask"></i>
+            Pharma & Biotech
+        </span>
+
     </div>
+
 </div>
-    </main>
 
-    <!-- Contact Banner -->
-    <section class="contact">
-        <h2>Initiate a Consultation</h2>
-        <p>Available for senior interim assignments, audit support, or executive QA oversight across EU, US, and beyond.</p>
-        <a href="mailto:atiqbawary@gmail.com" class="contact-email"><i class="fa-regular fa-envelope"></i> E-mail</a>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 BAWARY PQA Services. All rights reserved.</p>
-    </footer>
+<main>
+
+
+<!-- =========================
+     WHEN TO CONTACT BAWARY
+========================= -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Practical QA support
+            </div>
+
+            <h2>
+                When an experienced QA resource is needed
+            </h2>
+
+            <p>
+                BAWARY is designed for situations where an internal team
+                needs additional experienced QA capacity without waiting
+                for a permanent hire.
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+            <div class="problem">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <h3>Backlog</h3>
+
+                <p>
+                    Batch records, quality documentation, deviations,
+                    CAPAs or other QA activities are accumulating.
+                </p>
+
+            </div>
+
+
+            <div class="problem">
+
+                <i class="fa-solid fa-person-circle-exclamation"></i>
+
+                <h3>Capacity Gap</h3>
+
+                <p>
+                    Your QA team needs temporary experienced support
+                    during absence, recruitment or workload peaks.
+                </p>
+
+            </div>
+
+
+            <div class="problem">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <h3>Inspection Pressure</h3>
+
+                <p>
+                    An audit or regulatory inspection requires focused
+                    preparation and rapid quality-system review.
+                </p>
+
+            </div>
+
+
+            <div class="problem">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <h3>Remediation</h3>
+
+                <p>
+                    A site needs practical support to investigate,
+                    remediate and strengthen GMP quality processes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="content-section services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Core expertise
+            </div>
+
+            <h2>
+                Pharmaceutical Quality Assurance Services
+            </h2>
+
+            <p>
+                Senior hands-on and advisory QA support for pharmaceutical,
+                biotech, biologics, sterile manufacturing, API and related
+                GMP environments.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+
+                <h3>
+                    Batch Review & Release Support
+                </h3>
+
+                <p>
+                    Practical QA capacity for documentation review and
+                    batch-related quality activities.
+                </p>
+
+                <ul>
+                    <li>Master Batch Record review</li>
+                    <li>Executed BPR/BCR review</li>
+                    <li>Batch release package verification</li>
+                    <li>Raw material and packaging release</li>
+                    <li>Intermediate and buffer release</li>
+                    <li>Environmental monitoring review</li>
+                    <li>Sterilization / autoclave record review</li>
+                    <li>Cold-chain and shipping data review</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+
+                <h3>
+                    Deviations, RCA & CAPA
+                </h3>
+
+                <p>
+                    Experienced support for complex investigations and
+                    risk-based corrective and preventive actions.
+                </p>
+
+                <ul>
+                    <li>Complex deviation investigation</li>
+                    <li>Root Cause Analysis</li>
+                    <li>Risk-based CAPA management</li>
+                    <li>OOS / OOT / OOE review</li>
+                    <li>Product complaint investigation</li>
+                    <li>CAPA effectiveness support</li>
+                    <li>Quality KPI / QMR support</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    GMP Audits & Inspection Readiness
+                </h3>
+
+                <p>
+                    Practical preparation and quality-system support for
+                    audits and regulatory inspection readiness.
+                </p>
+
+                <ul>
+                    <li>Inspection readiness programs</li>
+                    <li>Mock inspections</li>
+                    <li>Self-inspections</li>
+                    <li>Supplier and vendor audits</li>
+                    <li>CDMO / CMO auditing</li>
+                    <li>Audit remediation</li>
+                    <li>GMP gap assessment</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+
+                <h3>
+                    QMS & Quality Remediation
+                </h3>
+
+                <p>
+                    Support for organizations strengthening or remediating
+                    their pharmaceutical quality systems.
+                </p>
+
+                <ul>
+                    <li>QMS gap analysis</li>
+                    <li>SOP and WI authoring</li>
+                    <li>Change Control</li>
+                    <li>Quality Risk Management</li>
+                    <li>Contamination Control Strategy support</li>
+                    <li>Quality management reporting</li>
+                    <li>Data Integrity culture and processes</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-industry"></i>
+                </div>
+
+                <h3>
+                    Supplier & CDMO Quality
+                </h3>
+
+                <p>
+                    Quality oversight for external manufacturing and
+                    supplier relationships.
+                </p>
+
+                <ul>
+                    <li>Supplier qualification</li>
+                    <li>Supplier and CDMO audits</li>
+                    <li>Vendor CAPA follow-up</li>
+                    <li>External quality oversight</li>
+                    <li>Audit schedule support</li>
+                    <li>Quality risk assessment</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <h3>
+                    Interim QA & Advisory Support
+                </h3>
+
+                <p>
+                    Senior QA support during vacancies, manufacturing
+                    peaks, projects, remediation or organizational change.
+                </p>
+
+                <ul>
+                    <li>Interim QA management</li>
+                    <li>QA operational oversight</li>
+                    <li>Project QA leadership</li>
+                    <li>Executive quality reporting</li>
+                    <li>Risk management</li>
+                    <li>QA team mentoring and training</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ENGAGEMENT MODELS
+========================= -->
+
+<section class="content-section" id="engagements">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Flexible engagement
+            </div>
+
+            <h2>
+                Start with the problem you need solved
+            </h2>
+
+            <p>
+                The engagement can be small and focused or develop into
+                longer-term interim support.
+            </p>
+
+        </div>
+
+
+        <div class="engagement-grid">
+
+            <div class="engagement">
+
+                <div class="number">01 — SHORT PROJECT</div>
+
+                <h3>
+                    Focused QA Support
+                </h3>
+
+                <p>
+                    A defined QA problem such as a batch-review backlog,
+                    deviation investigation, CAPA remediation, audit
+                    preparation or documentation review.
+                </p>
+
+            </div>
+
+
+            <div class="engagement">
+
+                <div class="number">02 — INTERIM</div>
+
+                <h3>
+                    Temporary QA Capacity
+                </h3>
+
+                <p>
+                    Experienced QA support during vacancies, workload
+                    peaks, manufacturing campaigns, remediation programs
+                    or major quality projects.
+                </p>
+
+            </div>
+
+
+            <div class="engagement">
+
+                <div class="number">03 — ADVISORY</div>
+
+                <h3>
+                    Senior QA Advisory
+                </h3>
+
+                <p>
+                    Strategic and operational support for QMS development,
+                    quality risk management, inspection readiness and
+                    broader compliance initiatives.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="content-section about" id="about">
+
+    <div class="container about-grid">
+
+        <div>
+            <img
+                src="atiq.JPG"
+                alt="Atiq Bawary, Founder and Senior Pharmaceutical Quality Assurance Consultant"
+                class="profile-photo"
+                loading="lazy">
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="role">
+                FOUNDER & SENIOR PHARMACEUTICAL QA CONSULTANT
+            </div>
+
+            <h2>
+                Atiq Bawary
+            </h2>
+
+            <p>
+                Senior Quality Assurance specialist with extensive experience
+                in cross-functional pharmaceutical quality operations and
+                compliance projects across European, US and Asian
+                pharmaceutical environments.
+            </p>
+
+            <p>
+                Specialist areas include operational QA, batch documentation,
+                deviations, root cause investigations, CAPA, GMP compliance,
+                audits, inspection readiness and quality-system improvement.
+            </p>
+
+            <p>
+                Atiq is an instructor at the European Compliance Academy (ECA)
+                specializing in Root Cause Investigations and is enrolled in
+                Harvard Executive Education.
+            </p>
+
+            <div class="credentials">
+
+                <span class="credential">GMP / GxP</span>
+                <span class="credential">Biologics</span>
+                <span class="credential">Sterile Manufacturing</span>
+                <span class="credential">API</span>
+                <span class="credential">Deviation & CAPA</span>
+                <span class="credential">Auditing</span>
+                <span class="credential">Inspection Readiness</span>
+                <span class="credential">QMS</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     AI DISCOVERY
+========================= -->
+
+<section class="content-section ai-section">
+
+    <div class="container">
+
+        <div class="ai-box">
+
+            <div class="section-label">
+                Pharmaceutical QA support
+            </div>
+
+            <h2>
+                Looking for experienced pharmaceutical QA support?
+            </h2>
+
+            <p>
+                If your organization needs an experienced independent
+                pharmaceutical QA professional for a defined task, interim
+                assignment, remediation project, audit or GMP quality
+                activity, <strong>BAWARY can be contacted directly.</strong>
+            </p>
+
+            <div class="ai-use-cases">
+
+                <div class="ai-use-case">
+                    <strong>Batch Records</strong>
+                    <span>
+                        Review, documentation and batch-related QA support.
+                    </span>
+                </div>
+
+                <div class="ai-use-case">
+                    <strong>Deviations & CAPA</strong>
+                    <span>
+                        Investigation, RCA and corrective-action support.
+                    </span>
+                </div>
+
+                <div class="ai-use-case">
+                    <strong>GMP Audits</strong>
+                    <span>
+                        Audit, inspection readiness and remediation support.
+                    </span>
+                </div>
+
+                <div class="ai-use-case">
+                    <strong>CDMO Quality</strong>
+                    <span>
+                        Supplier, vendor and external manufacturing oversight.
+                    </span>
+                </div>
+
+                <div class="ai-use-case">
+                    <strong>QMS</strong>
+                    <span>
+                        Quality-system improvement, remediation and risk work.
+                    </span>
+                </div>
+
+                <div class="ai-use-case">
+                    <strong>Interim QA</strong>
+                    <span>
+                        Temporary senior QA capacity for projects and workload peaks.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="content-section" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Frequently asked questions
+            </div>
+
+            <h2>
+                Pharmaceutical QA support
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <details>
+                <summary>
+                    What services does BAWARY provide?
+                </summary>
+
+                <p>
+                    BAWARY provides senior pharmaceutical Quality Assurance
+                    support including batch record review, batch-release
+                    documentation support, deviation investigations, root
+                    cause analysis, CAPA management, GMP audits, inspection
+                    readiness, QMS remediation, supplier/CDMO auditing,
+                    quality risk management and interim QA support.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Can BAWARY support a short-term QA backlog?
+                </summary>
+
+                <p>
+                    Yes. Short-term project support can be used for defined
+                    backlogs such as batch documentation review, deviations,
+                    CAPAs, audit preparation or other operational QA tasks.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Can BAWARY work remotely?
+                </summary>
+
+                <p>
+                    Yes. Remote support is available globally where the
+                    nature of the assignment permits remote execution.
+                    Germany, the Netherlands and Belgium are key service
+                    regions for on-site and hybrid support.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Does BAWARY work with CDMOs and suppliers?
+                </summary>
+
+                <p>
+                    Yes. Services include supplier and vendor auditing,
+                    CDMO/CMO auditing, vendor qualification, CAPA follow-up
+                    and external quality oversight.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Who can contact BAWARY?
+                </summary>
+
+                <p>
+                    Pharmaceutical and biotechnology companies, CDMOs, CMOs,
+                    QA leaders, QPs, manufacturing organizations and
+                    consulting or recruitment firms can contact BAWARY
+                    regarding suitable QA assignments.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <h2>
+            Have a QA problem that needs experienced support?
+        </h2>
+
+        <p>
+            Tell me what your team needs help with. The requirement can be
+            a short project, temporary QA capacity, audit support,
+            remediation activity or longer-term interim assignment.
+        </p>
+
+        <a href="mailto:atiqbawary@gmail.com?subject=BAWARY%20QA%20Consulting%20Requirement"
+           class="btn btn-light">
+
+            <i class="fa-regular fa-envelope"></i>
+            Contact BAWARY
+
+        </a>
+
+        <p style="margin-top:22px;margin-bottom:0;">
+            <a href="mailto:atiqbawary@gmail.com"
+               class="contact-email">
+                atiqbawary@gmail.com
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+            © 2026 BAWARY. Pharmaceutical Quality Assurance Services.
+        </div>
+
+        <div class="footer-links">
+
+            <a href="https://linkedin.com/in/atiqbawary"
+               target="_blank"
+               rel="noopener">
+                LinkedIn
+            </a>
+
+            <a href="mailto:atiqbawary@gmail.com">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
 </html>
